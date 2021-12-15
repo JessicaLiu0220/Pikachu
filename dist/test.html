@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="demo2"></style>
+    <div class="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">开始</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnMid">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        *::after {
+            box-sizing: border-box;
+        }
+
+        *::before {
+            box-sizing: border-box;
+        }
+
+        .buttons {
+            position: fixed;
+            right: 5px;
+            top: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2px;
+
+            z-index: 100;
+        }
+
+        .buttons>button {
+            margin-top: 10px;
+            font-size: 16px;
+            padding: 4px 8px;
+        }
+
+        #demo2 {
+            display: none;
+        }
+
+        #demo {
+            position: fixed;
+            width: 100%;
+            height: 50vh;
+            border: 1px solid red;
+            overflow: hidden;
+            overflow-y: auto;
+            top: 0px;
+            left: 0px;
+        }
+
+        /* 隐藏滚动条 */
+        #demo::-webkit-scrollbar {
+            display: none;
+        }
+
+        #html {
+            position: fixed;
+            width: 100%;
+            height: 50vh;
+            bottom: 0px;
+            left: 0px;
+
+        }</style>
+
+    <div id="html">
+        <div class="skin">
+            <div class="test"></div>
+            <div class="eye lefteye">
+                <div class="yanzhu"></div>
+            </div>
+            <div class="eye righteye">
+                <div class="yanzhu"></div>
+            </div>
+            <div class="nose">
+                <div class="san">
+                    <div class="yuan"></div>
+                </div>
+            </div>
+            <div class="face leftface"></div>
+            <div class="face rightface"></div>
+            <div class="mouth">
+                <div class="upperLip left"></div>
+                <div class="upperLip right"></div>
+                <div class="down">
+                    <div class="yuan1">
+                        <div class="yuan2"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="test.61155c11.js"></script>
+</body>
+
+</html>
